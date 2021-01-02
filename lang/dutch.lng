@@ -1,0 +1,78 @@
+##grflangid 0x1F
+
+#Main grf title and description
+STR_GRF_NAME				:{TITLE}
+STR_GRF_DESCRIPTION			:{BLUE}{TITLE} {VERSION}{}{WHITE}{}Dutch ROads Project - DROP{}{}{BROWN}By Javelin{ORANGE}NL{}
+STR_GRF_URL					:https://github.com/javelinnl/drop
+
+#Tracktypes
+
+STR_TRACK_TYPEBIKE	:Fietspad
+STR_CONSTRUCTIONBIKE:Fietspad
+STR_MENUBIKE		:Fietspad
+STR_BUILD_CAPTIONBIKE:Nieuwe voertuigen
+STR_AUTOREPLACEBIKE	:Fietspad
+STR_NEW_ENGINEBIKE	:Nieuwe voertuigen
+
+STR_TRACK_TYPEBRIC	:Klinkerweg
+STR_CONSTRUCTIONBRIC:Klinkerweg
+STR_MENUBRIC		:Klinkerweg
+STR_BUILD_CAPTIONBRIC:Nieuwe voertuigen
+STR_AUTOREPLACEBRIC	:Klinkerweg
+STR_NEW_ENGINEBRIC	:Nieuwe voertuigen
+
+STR_TRACK_TYPE30	:Wijkstraat
+STR_CONSTRUCTION30	:Wijkstraat
+STR_MENU30			:Wijkstraat
+STR_BUILD_CAPTION30	:Nieuwe voertuigen
+STR_AUTOREPLACE30	:Wijkstraat
+STR_NEW_ENGINE30	:Nieuwe voertuigen
+
+STR_TRACK_TYPE50	:Stadstraat
+STR_CONSTRUCTION50	:Stadstraat
+STR_MENU50			:Stadstraat
+STR_BUILD_CAPTION50	:Nieuwe voertuigen
+STR_AUTOREPLACE50	:Stadstraat
+STR_NEW_ENGINE50	:Nieuwe voertuigen
+
+STR_TRACK_TYPE50F	:Stadstraat met fietspad
+STR_CONSTRUCTION50F	:Stadstraat met fietspad
+STR_MENU50F			:Stadstraat met fietspad
+STR_BUILD_CAPTION50F:Nieuwe voertuigen
+STR_AUTOREPLACE50F	:Stadstraat met fietspad
+STR_NEW_ENGINE50F	:Nieuwe voertuigen
+
+STR_TRACK_TYPE60	:Plattelandsweg
+STR_CONSTRUCTION60	:Plattelandsweg
+STR_MENU60			:Plattelandsweg
+STR_BUILD_CAPTION60	:Nieuwe voertuigen
+STR_AUTOREPLACE60	:Plattelandsweg
+STR_NEW_ENGINE60	:Nieuwe voertuigen
+
+STR_TRACK_TYPE80	:Provinciale weg
+STR_CONSTRUCTION80	:Provinciale weg
+STR_MENU80			:Provinciale weg
+STR_BUILD_CAPTION80	:Nieuwe voertuigen
+STR_AUTOREPLACE80	:Provinciale weg
+STR_NEW_ENGINE80	:Nieuwe voertuigen
+
+STR_TRACK_TYPE100	:Autoweg
+STR_CONSTRUCTION100	:Autoweg
+STR_MENU100			:Autoweg
+STR_BUILD_CAPTION100:Nieuwe voertuigen
+STR_AUTOREPLACE100	:Autoweg
+STR_NEW_ENGINE100	:Nieuwe voertuigen
+
+STR_TRACK_TYPE120	:Snelweg
+STR_CONSTRUCTION120	:Snelweg
+STR_MENU120			:Snelweg
+STR_BUILD_CAPTION120:Nieuwe voertuigen
+STR_AUTOREPLACE120	:Snelweg
+STR_NEW_ENGINE120	:Nieuwe voertuigen
+
+#Vehicles
+
+STR_VEH1			:Omafiets
+
+
+

@@ -1,0 +1,78 @@
+##grflangid 0x01
+
+#Main grf title and description
+STR_GRF_NAME				:{TITLE}
+STR_GRF_DESCRIPTION			:{BLUE}{TITLE} {VERSION}{}{WHITE}{}Dutch ROads Project - DROP{}{}{BROWN}By Javelin{ORANGE}NL{}
+STR_GRF_URL					:https://github.com/javelinnl/drop
+
+#Tracktypes
+
+STR_TRACK_TYPEBIKE	:Bike path
+STR_CONSTRUCTIONBIKE:Bike path
+STR_MENUBIKE		:Bike path
+STR_BUILD_CAPTIONBIKE:New vehicles
+STR_AUTOREPLACEBIKE	:Bike path
+STR_NEW_ENGINEBIKE	:New vehicles
+
+STR_TRACK_TYPEBRIC	:Brick road
+STR_CONSTRUCTIONBRIC:Brick road
+STR_MENUBRIC		:Brick road
+STR_BUILD_CAPTIONBRIC:New vehicles
+STR_AUTOREPLACEBRIC	:Brick road
+STR_NEW_ENGINEBRIC	:Brick road
+
+STR_TRACK_TYPE30	:Neighbourhood road
+STR_CONSTRUCTION30	:Neighbourhood road
+STR_MENU30			:Neighbourhood road
+STR_BUILD_CAPTION30	:New vehicles
+STR_AUTOREPLACE30	:Neighbourhood road
+STR_NEW_ENGINE30	:New vehicles
+
+STR_TRACK_TYPE50	:City road
+STR_CONSTRUCTION50	:City road
+STR_MENU50			:City road
+STR_BUILD_CAPTION50	:New vehicles
+STR_AUTOREPLACE50	:City road
+STR_NEW_ENGINE50	:New vehicles
+
+STR_TRACK_TYPE50F	:City road w/bike lane
+STR_CONSTRUCTION50F	:City road w/bike lane
+STR_MENU50F			:City road w/bike lane
+STR_BUILD_CAPTION50F:New vehicles
+STR_AUTOREPLACE50F	:City road w/bike lane
+STR_NEW_ENGINE50F	:New vehicles
+
+STR_TRACK_TYPE60	:Rural road
+STR_CONSTRUCTION60	:Rural road
+STR_MENU60			:Rural road
+STR_BUILD_CAPTION60	:New vehicles
+STR_AUTOREPLACE60	:Rural road
+STR_NEW_ENGINE60	:New vehicles
+
+STR_TRACK_TYPE80	:Provincial road
+STR_CONSTRUCTION80	:Provincial road
+STR_MENU80			:Provincial road
+STR_BUILD_CAPTION80	:New vehicles
+STR_AUTOREPLACE80	:Provincial road
+STR_NEW_ENGINE80	:New vehicles
+
+STR_TRACK_TYPE100	:Motorway
+STR_CONSTRUCTION100	:Motorway
+STR_MENU100			:Motorway
+STR_BUILD_CAPTION100:New vehicles
+STR_AUTOREPLACE100	:Motorway
+STR_NEW_ENGINE100	:New vehicles
+
+STR_TRACK_TYPE120	:Highway
+STR_CONSTRUCTION120	:Highway
+STR_MENU120			:Highway
+STR_BUILD_CAPTION120:New vehicles
+STR_AUTOREPLACE120	:Highway
+STR_NEW_ENGINE120	:New vehicles
+
+#Vehicles
+
+STR_VEH1			:Grandma bike
+
+
+

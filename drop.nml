@@ -1,0 +1,533 @@
+grf {
+	grfid					: "JV\56\01";
+	name					: string(STR_GRF_NAME);
+	desc					: string(STR_GRF_DESCRIPTION);
+	url						: string(STR_GRF_URL);
+	version					: 0;
+	min_compatible_version	: 0;
+}
+
+/////
+//*Templates
+
+
+template tmpl_lay() {
+[	0,	0,		64,	31,		-32,	0]
+[  80,	0,		64,	31,		-32,	0]
+[ 160,	0,		64,	31,		-32,	0]
+[ 240,	0,		64,	31,		-32,	0]
+[ 320,	0,		64,	31,		-32,	0]
+[ 400,	0,		64,	31,		-32,	0]
+[ 480,	0,		64,	31,		-32,	0]
+
+[	0,	40,		64,	31,		-32,	0]
+[  80,	40,		64,	31,		-32,	0]
+[ 160,	40,		64,	31,		-32,	0]
+[ 240,	40,		64,	31,		-32,	0]
+[ 320,	40,		64,	39,		-32,	-8]
+[ 400,	40,		64,	20,		-32,	2]
+[ 480,	40,		64,	20,		-32,	2]
+[ 560,	40,		64,	39,		-32,	-8]
+
+[	0,	80,		64,	31,		-32,	0]
+[  80,	80,		64,	31,		-32,	0]
+[ 160,	80,		64,	31,		-32,	0]
+[ 240,	80,		64,	31,		-32,	0]
+}
+
+template tmpl_roadstop() {
+[	0,	0,		64,	31,		-32,	0]
+[  80,	0,		64,	31,		-32,	0]
+[ 160,	0,		64,	31,		-32,	0]
+[ 240,	0,		64,	31,		-32,	0]
+}
+
+
+template tmpl_bridge() {
+[  1,    1,		64,	31,		-31, 0]
+[ 81,    1,		64,	31,		-31, 0]
+
+[161,    1,		64,	39,		-31,-8]
+[241,    1,		64,	23,		-31, 2]
+[321,    1,		64,	23,		-31, 2]
+[401,    1,		64,	39,		-31,-8]
+}
+
+template tmpl_gui() {
+[  0, 	0, 		20, 13, 	0, 5]
+[ 32, 	0, 		20, 13, 	0, 5]
+[ 64, 	0, 		20, 20, 	0, 0]
+[ 96, 	0, 		20, 20, 	0, 0]
+[128, 	0, 		20, 20, 	0, 0]
+[160, 	0, 		20, 20, 	0, 0]
+
+[  0, 	32,		48, 36, 	-19, -9]
+[ 64, 	32,		48, 36, 	-19, -8]
+[128, 	32,		32, 32, 	0, 0]
+[172, 	32,		32, 32, 	0, 0]
+[216, 	32,		32, 32, 	0, 0]
+[260, 	32,		32, 32, 	0, 0]
+}
+
+template tmpl_depot() {
+[ 42,	85, 	24, 28, 	 0 , 0]   
+[  2,	24, 	64, 58,	  	 0 , -42] 
+[ 82,	85, 	24, 28,	 	-23, 1] 
+[ 82,	24, 	64, 58,	 	-63, -41]
+[242,	24, 	64, 58, 	-63, -42]
+[162,	24, 	64, 58,  	1 , -42] 
+}
+
+////
+//*Underlay
+
+spriteset(underlaybike, "gfx/bike/underlay.png") {
+tmpl_lay()
+}
+spriteset(underlaybric, "gfx/bric/underlay.png") {
+tmpl_lay()
+}
+spriteset(underlay30, "gfx/30/underlay.png") {
+tmpl_lay()
+}
+spriteset(underlay50, "gfx/50/underlay.png") {
+tmpl_lay()
+}
+spriteset(underlay50f, "gfx/50f/underlay.png") {
+tmpl_lay()
+}
+spriteset(underlay60, "gfx/60/underlay.png") {
+tmpl_lay()
+}
+spriteset(underlay80, "gfx/80/underlay.png") {
+tmpl_lay()
+}
+spriteset(underlay100, "gfx/100/underlay.png") {
+tmpl_lay()
+}
+spriteset(underlay120, "gfx/120/underlay.png") {
+tmpl_lay()
+}
+
+//*Roadstop
+
+spriteset(roadstopsbike, "gfx/bike/roadstop.png") {
+tmpl_roadstop()
+}
+spriteset(roadstopsbric, "gfx/bric/roadstop.png") {
+tmpl_roadstop()
+}
+spriteset(roadstops30, "gfx/30/roadstop.png") {
+tmpl_roadstop()
+}
+spriteset(roadstops50, "gfx/50/roadstop.png") {
+tmpl_roadstop()
+}
+spriteset(roadstops50f, "gfx/50f/roadstop.png") {
+tmpl_roadstop()
+}
+spriteset(roadstops60, "gfx/60/roadstop.png") {
+tmpl_roadstop()
+}
+spriteset(roadstops80, "gfx/80/roadstop.png") {
+tmpl_roadstop()
+}
+spriteset(roadstops100, "gfx/100/roadstop.png") {
+tmpl_roadstop()
+}
+spriteset(roadstops120, "gfx/120/roadstop.png") {
+tmpl_roadstop()
+}
+
+
+//*Bridgesurface
+
+spriteset(bridgebike, "gfx/bike/bridge.png") {
+tmpl_bridge()
+}
+spriteset(bridgebric, "gfx/bric/bridge.png") {
+tmpl_bridge()
+}
+spriteset(bridge30, "gfx/30/bridge.png") {
+tmpl_bridge()
+}
+spriteset(bridge50, "gfx/50/bridge.png") {
+tmpl_bridge()
+}
+spriteset(bridge50f, "gfx/50f/bridge.png") {
+tmpl_bridge()
+}
+spriteset(bridge60, "gfx/60/bridge.png") {
+tmpl_bridge()
+}
+spriteset(bridge80, "gfx/80/bridge.png") {
+tmpl_bridge()
+}
+spriteset(bridge100, "gfx/100/bridge.png") {
+tmpl_bridge()
+}
+spriteset(bridge120, "gfx/120/bridge.png") {
+tmpl_bridge()
+}
+
+//*Gui
+
+spriteset(guibike, "gfx/bike/gui.png") {
+tmpl_gui()
+}
+spriteset(guibric, "gfx/bric/gui.png") {
+tmpl_gui()
+}
+spriteset(gui30, "gfx/30/gui.png") {
+tmpl_gui()
+}
+spriteset(gui50, "gfx/50/gui.png") {
+tmpl_gui()
+}
+spriteset(gui50f, "gfx/50f/gui.png") {
+tmpl_gui()
+}
+spriteset(gui60, "gfx/60/gui.png") {
+tmpl_gui()
+}
+spriteset(gui80, "gfx/80/gui.png") {
+tmpl_gui()
+}
+spriteset(gui100, "gfx/100/gui.png") {
+tmpl_gui()
+}
+spriteset(gui120, "gfx/120/gui.png") {
+tmpl_gui()
+}
+
+//*Depot
+
+spriteset(depotbike, "gfx/bike/depot.png") {
+tmpl_depot()
+}
+spriteset(depotbric, "gfx/bric/depot.png") {
+tmpl_depot()
+}
+spriteset(depot30, "gfx/30/depot.png") {
+tmpl_depot()
+}
+spriteset(depot50, "gfx/50/depot.png") {
+tmpl_depot()
+}
+spriteset(depot50f, "gfx/50f/depot.png") {
+tmpl_depot()
+}
+spriteset(depot60, "gfx/60/depot.png") {
+tmpl_depot()
+}
+spriteset(depot80, "gfx/80/depot.png") {
+tmpl_depot()
+}
+spriteset(depot100, "gfx/100/depot.png") {
+tmpl_depot()
+}
+spriteset(depot120, "gfx/120/depot.png") {
+tmpl_depot()
+}
+
+//*Road Type
+
+roadtypetable {
+ROAD: [BRIC, NL30, NL50, NL5F, NL60, NL80, NL10, NL12],
+BIK3: [BIKE]
+
+}
+
+item(FEAT_ROADTYPES, ROAD) {
+		property {
+        label:                      "ROAD";
+		powered_roadtype_list:		["BRIC", "NL30", "NL50", "NL5F", "NL60", "NL80", "NL10", "NL12"];
+		roadtype_flags:        		bitmask(ROADTYPE_FLAG_HIDDEN);
+    }
+}
+
+item(FEAT_ROADTYPES, BIKE) {
+		property {
+        label:                      "BIKE";
+		introduction_date: 			date(1896,1,1);
+        name:                       string(STR_TRACK_TYPEBIKE);
+		toolbar_caption: 			string(STR_CONSTRUCTIONBIKE);
+        menu_text:                  string(STR_MENUBIKE);
+        build_window_caption:       string(STR_BUILD_CAPTIONBIKE);
+        autoreplace_text:           string(STR_AUTOREPLACEBIKE);
+        new_engine_text:            string(STR_NEW_ENGINEBIKE);
+        construction_cost:          10;
+		powered_roadtype_list:		["BIKE", "BRIC", "ROAD", "NL30", "NL50", "NL5F", "NL60"];
+    }
+    graphics {
+		gui:				guibike;
+        underlay:        	underlaybike;
+        depots:          	depotbike;
+        bridge_surfaces: 	bridgebike;
+        roadstops:       	roadstopsbike;
+    }
+}
+
+item(FEAT_ROADTYPES, BRIC) {
+		property {
+        label:                      "BRIC";
+		introduction_date: 			date(1700,1,1);
+        name:                       string(STR_TRACK_TYPEBRIC);
+		toolbar_caption: 			string(STR_CONSTRUCTIONBRIC);
+        menu_text:                  string(STR_MENUBRIC);
+        build_window_caption:       string(STR_BUILD_CAPTIONBRIC);
+        autoreplace_text:           string(STR_AUTOREPLACEBRIC);
+        new_engine_text:            string(STR_NEW_ENGINEBRIC);
+        construction_cost:          10;
+        speed_limit:                30 km/h;
+		powered_roadtype_list:		["ROAD", "BRIC", "NL30", "NL50", "NL5F", "NL60", "NL80", "NL10", "NL12"];
+		roadtype_flags:        		bitmask(ROADTYPE_FLAG_TOWN_BUILD);
+    }
+    graphics {
+		gui:				guibric;
+        underlay:        	underlaybric;
+        depots:          	depotbric;
+        bridge_surfaces: 	bridgebric;
+        roadstops:       	roadstopsbric;
+    }
+}
+
+item(FEAT_ROADTYPES, NL30) {
+		property {
+        label:                      "NL30";
+		introduction_date: 			date(1915,1,1);
+        name:                       string(STR_TRACK_TYPE30);
+		toolbar_caption: 			string(STR_CONSTRUCTION30);
+        menu_text:                  string(STR_MENU30);
+        build_window_caption:       string(STR_BUILD_CAPTION30);
+        autoreplace_text:           string(STR_AUTOREPLACE30);
+        new_engine_text:            string(STR_NEW_ENGINE30);
+        construction_cost:          10;
+        speed_limit:                30 km/h;
+		powered_roadtype_list:		["ROAD", "BRIC", "NL30", "NL50", "NL5F", "NL60", "NL80", "NL10", "NL12"];
+		roadtype_flags:        		bitmask(ROADTYPE_FLAG_TOWN_BUILD);
+    }
+    graphics {
+		gui:				gui30;
+        underlay:        	underlay30;
+        depots:          	depot30;
+        bridge_surfaces: 	bridge30;
+        roadstops:       	roadstops30;
+    }
+}
+
+item(FEAT_ROADTYPES, NL50) {
+		property {
+        label:                      "NL50";
+		introduction_date: 			date(1920,1,1);
+        name:                       string(STR_TRACK_TYPE50);
+		toolbar_caption: 			string(STR_CONSTRUCTION50);
+        menu_text:                  string(STR_MENU50);
+        build_window_caption:       string(STR_BUILD_CAPTION50);
+        autoreplace_text:           string(STR_AUTOREPLACE50);
+        new_engine_text:            string(STR_NEW_ENGINE50);
+        construction_cost:          10;
+        speed_limit:                50 km/h;
+		powered_roadtype_list:		["ROAD", "BRIC", "NL30", "NL50", "NL5F", "NL60", "NL80", "NL10", "NL12"];
+		roadtype_flags:        		bitmask(ROADTYPE_FLAG_TOWN_BUILD);
+    }
+    graphics {
+		gui:				gui50;
+        underlay:        	underlay50;
+        depots:          	depot50;
+        bridge_surfaces: 	bridge50;
+        roadstops:       	roadstops50;
+    }
+}
+
+item(FEAT_ROADTYPES, NL5F) {
+		property {
+        label:                      "NL5F";
+		introduction_date: 			date(1980,1,1);
+        name:                       string(STR_TRACK_TYPE50F);
+		toolbar_caption: 			string(STR_CONSTRUCTION50F);
+        menu_text:                  string(STR_MENU50F);
+        build_window_caption:       string(STR_BUILD_CAPTION50F);
+        autoreplace_text:           string(STR_AUTOREPLACE50F);
+        new_engine_text:            string(STR_NEW_ENGINE50F);
+        construction_cost:          10;
+        speed_limit:                50 km/h;
+		powered_roadtype_list:		["ROAD", "BRIC", "NL30", "NL50", "NL5F", "NL60", "NL80", "NL10", "NL12"];
+    }
+    graphics {
+		gui:				gui50f;
+        underlay:        	underlay50f;
+        depots:          	depot50f;
+        bridge_surfaces: 	bridge50f;
+        roadstops:       	roadstops50f;
+    }
+}
+
+item(FEAT_ROADTYPES, NL60) {
+		property {
+        label:                      "NL60";
+		introduction_date: 			date(1925,1,1);
+        name:                       string(STR_TRACK_TYPE60);
+		toolbar_caption: 			string(STR_CONSTRUCTION60);
+        menu_text:                  string(STR_MENU60);
+        build_window_caption:       string(STR_BUILD_CAPTION60);
+        autoreplace_text:           string(STR_AUTOREPLACE60);
+        new_engine_text:            string(STR_NEW_ENGINE60);
+        construction_cost:          10;
+        speed_limit:                60 km/h;
+		powered_roadtype_list:		["ROAD", "BRIC", "NL30", "NL50", "NL5F", "NL60", "NL80", "NL10", "NL12"];
+    }
+    graphics {
+		gui:				gui60;
+        underlay:        	underlay60;
+        depots:          	depot60;
+        bridge_surfaces: 	bridge60;
+        roadstops:       	roadstops60;
+    }
+}
+
+item(FEAT_ROADTYPES, NL80) {
+		property {
+        label:                      "NL80";
+		introduction_date: 			date(1930,1,1);
+        name:                       string(STR_TRACK_TYPE80);
+		toolbar_caption: 			string(STR_CONSTRUCTION80);
+        menu_text:                  string(STR_MENU80);
+        build_window_caption:       string(STR_BUILD_CAPTION80);
+        autoreplace_text:           string(STR_AUTOREPLACE80);
+        new_engine_text:            string(STR_NEW_ENGINE80);
+        construction_cost:          10;
+        speed_limit:                80 km/h;
+		powered_roadtype_list:		["ROAD", "BRIC", "NL30", "NL50", "NL5F", "NL60", "NL80", "NL10", "NL12"];
+    }
+    graphics {
+		gui:				gui80;
+        underlay:        	underlay80;
+        depots:          	depot80;
+        bridge_surfaces: 	bridge80;
+        roadstops:       	roadstops80;
+    }
+}
+
+item(FEAT_ROADTYPES, NL10) {
+		property {
+        label:                      "NL10";
+		introduction_date: 			date(1935,1,1);
+        name:                       string(STR_TRACK_TYPE100);
+		toolbar_caption: 			string(STR_CONSTRUCTION100);
+        menu_text:                  string(STR_MENU100);
+        build_window_caption:       string(STR_BUILD_CAPTION100);
+        autoreplace_text:           string(STR_AUTOREPLACE100);
+        new_engine_text:            string(STR_NEW_ENGINE100);
+        construction_cost:          10;
+        speed_limit:                100 km/h;
+		powered_roadtype_list:		["ROAD", "BRIC", "NL30", "NL50", "NL5F", "NL60", "NL80", "NL10", "NL12"];
+    }
+    graphics {
+		gui:				gui100;
+        underlay:        	underlay100;
+        depots:          	depot100;
+        bridge_surfaces: 	bridge100;
+        roadstops:       	roadstops100;
+    }
+}
+
+item(FEAT_ROADTYPES, NL12) {
+		property {
+        label:                      "NL12";
+		introduction_date: 			date(1940,1,1);
+        name:                       string(STR_TRACK_TYPE120);
+		toolbar_caption: 			string(STR_CONSTRUCTION120);
+        menu_text:                  string(STR_MENU120);
+        build_window_caption:       string(STR_BUILD_CAPTION120);
+        autoreplace_text:           string(STR_AUTOREPLACE120);
+        new_engine_text:            string(STR_NEW_ENGINE120);
+        construction_cost:          10;
+        speed_limit:                120 km/h;
+		powered_roadtype_list:		["ROAD", "BRIC", "NL30", "NL50", "NL5F", "NL60", "NL80", "NL10", "NL12"];
+    }
+    graphics {
+		gui:				gui120;
+        underlay:        	underlay120;
+        depots:          	depot120;
+        bridge_surfaces: 	bridge120;
+        roadstops:       	roadstops120;
+    }
+}
+
+//*Vehicle spritesets
+
+template tmpl_bike1() {
+[ 0, 	0, 		 10, 12,		 -4, -10]
+[ 10,   0, 		 10, 12,		  1, -5]
+[ 20, 	0, 		 10, 12,		  3, -5]
+[ 30, 	0, 		 10, 12,		  0, 0]
+[ 40, 	0, 		 10, 12,		 -4, -7]
+[ 50, 	0, 		 10, 12,		-14, -4]
+[ 60,	0, 		 10, 12,		-12, -9]
+[ 70,	0, 		 10, 12,		 -5, -10]
+}
+
+template tmpl_bike2() {
+[ 0, 	0, 		 10, 12,		 -6, -10]
+[ 10,   0, 		 10, 12,		  -3, -7]
+[ 20, 	0, 		 10, 12,		  3, -10]
+[ 30, 	0, 		 10, 12,		  4, -3]
+[ 40, 	0, 		 10, 12,		 0, -3]
+[ 50, 	0, 		 10, 12,		-10, -1]
+[ 60,	0, 		 10, 12,		-13, -5]
+[ 70,	0, 		 10, 12,		 -9, -6]
+}
+
+//
+
+spriteset(vehicle1, "gfx/vehicle1.png") {
+tmpl_bike1()
+}
+
+spriteset(vehicle2, "gfx/vehicle1.png") {
+tmpl_bike2()
+}
+	
+//*Vehicle Items
+
+switch (FEAT_ROADVEHS, SELF, switch_bike, current_roadtype) {
+	BIK3: vehicle2;
+//    BIK0:  vehicle2;
+//	vehicle1;
+	vehicle1;
+}
+
+item(FEAT_ROADVEHS, veh_1) {
+    property {
+        name:                         	string(STR_VEH1);
+        climates_available:           	ALL_CLIMATES; 
+        introduction_date:            	date(1885, 1, 1);
+        model_life:                   	VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 	100;
+        reliability_decay:            	20;
+        refittable_cargo_classes:     	bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: 	bitmask();
+        loading_speed:                	30; 
+        cost_factor:                  	1;
+        running_cost_factor:          	1;
+        sprite_id:                    	SPRITE_ID_NEW_ROADVEH;
+        speed:                        	20 km/h;
+		road_type:						BIK3;
+        misc_flags:                   	bitmask(ROADVEH_FLAG_NO_BREAKDOWN_SMOKE);
+		refit_cost:                   	0;
+        running_cost_base:            	RUNNING_COST_NONE;       
+
+        power:                        	10 hp;
+        weight:                       	1 ton;
+
+        tractive_effort_coefficient:  	0.3 / 3;
+        air_drag_coefficient:         	0.06;
+		default_cargo_type:				CC_PASSENGERS;
+		cargo_capacity:					1;
+		length:							3;
+    }
+    graphics {
+        default:                        switch_bike;
+    }
+}
